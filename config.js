@@ -34,7 +34,7 @@ module.exports = {
 
 	VERSION: 'v4.4.1', 
 
-    SESSION_ID: process.env.SESSION_ID || '',
+    SESSION_ID: process.env.SESSION_ID || '07_31_H_E_R_M_I_T_Z8GPIU4',
 
     MODE: (process.env.MODE || 'private').toLowerCase(),
 
@@ -100,7 +100,7 @@ module.exports = {
 
        DATABASE_URL: DATABASE_URL,
 
-       DATABASE:
+       DATABASE: postgresql://jarad_user:A2vrnAbMGUD071MB9S9eZc36V9lV24sV@dpg-cqf5su0gph6c73b7bbqg-a.oregon-postgres.render.com/jarad
 
        DATABASE_URL === './database.db' ? new Sequelize({dialect: 'sqlite', storage: DATABASE_URL, logging: false,}) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: {native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false,}),
 
@@ -108,7 +108,7 @@ module.exports = {
 
        BRAIN_ID: process.env.BRAIN_ID || 'bid=168613&key=EfbnX54Iy9PFIFp3',
 
-       SUDO: process.env.SUDO || '972528277700,0',
+       SUDO: process.env.SUDO || '237695488558',
 
        DEBUG: DEBUG
 
